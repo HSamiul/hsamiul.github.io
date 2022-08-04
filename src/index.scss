@@ -1,0 +1,15 @@
+@use './styles/variables' as v;
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+
+    background-color: v.$background;
+    color: v.$regText;
+
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+}

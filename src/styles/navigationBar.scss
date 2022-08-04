@@ -1,0 +1,45 @@
+@use 'variables' as v;
+
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+
+    /* Sticky nav bar code: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+    position: sticky;
+    top: 0px;
+    padding: 20px 0px;
+    z-index: 1;
+    background-color: v.$background;
+    
+    justify-content: space-between;
+    align-items: baseline;
+
+    .logo {
+        color: v.$popText;
+        font-family: 'Roboto Mono', monospace;
+        font-size: x-large;
+    }
+    
+    .item {
+        margin: 0px 20px;
+        text-decoration: none;
+    }
+    
+    .resume {
+        color: v.$popText !important;
+        padding: 10px;
+        border: 1px solid v.$popText;
+        border-radius: 5px;
+    
+    }
+    .resume:hover {
+        background-color: v.$lightPopText;
+    }
+    
+    a.item {
+        color: v.$regText;
+    }
+    a.item:hover {
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,86 @@
+@use "variables" as v;
+
+.projectsDivider {
+    // background-color: red;
+    margin-top: 100px;
+    margin-left: 100px; margin-right: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .blip {
+        color: v.$popText;
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .text {
+        color: v.$titleText;
+        font-size: 2rem;
+        font-weight: bold;
+        // word-spacing: 0rem !important;
+
+        margin-right: 20px;
+
+        .joke {
+            font-size: 1rem;
+            color: v.$regText;
+            vertical-align: middle;
+        }
+    }
+
+    .divider {
+        flex: 1;
+        height: 1px;
+        background-color: v.$lightRegText;
+    }
+}
+
+.project {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 800px;
+    // background-color: red;
+    // margin-left: 200px; margin-right: 200px;
+    align-self: center;
+
+    .title {
+        color: v.$popText;
+        font-family: 'Roboto Mono', monospace;
+        
+        margin-bottom: 10px;
+    }
+
+    .name {
+        color: v.$titleText;
+        font-weight: bold;
+        font-size: 2rem;
+
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        // background-color: red;
+        display: flex;
+        align-items: center;
+
+        .details {
+            width: 500px;
+            padding: 20px;
+            border-radius: 5px;
+
+            line-height: 1.5rem;
+            background-color: v.$cardBackground;
+        }
+
+        .image {
+            z-index: -1;
+            margin-left: -10%;
+            // margin-top: 10%;
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.about {
+    margin-top: 100px;
+
+    width: 800px;
+    margin-left: 100px; margin-right: 100px;
+    
+    display: flex;
+    flex-direction: column;
+
+    .greeting {
+        color: v.$popText;
+        font-family: 'Roboto Mono', monospace;
+    
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 5rem;
+        font-weight: bold;
+        color: v.$titleText;
+    }
+    
+    .statement {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .joke {
+        vertical-align: middle;
+        font-size: 2rem;
+    }
+}
