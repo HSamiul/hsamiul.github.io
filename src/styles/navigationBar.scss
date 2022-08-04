@@ -7,7 +7,7 @@
     /* Sticky nav bar code: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
     position: sticky;
     top: 0px;
-    padding: 20px 0px;
+    padding-top: 20px; padding-bottom: 10px;
     z-index: 1;
     background-color: v.$background;
     
