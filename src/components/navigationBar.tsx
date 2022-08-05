@@ -12,7 +12,7 @@ function NavigationBar(): JSX.Element {
                 <a href="" className="item">Experience</a>
                 <a href="" className="item">Projects</a>
                 <a href=""  className="item">Contact</a>
-                <a target="_blank" href="/Samiul-Hoque-Resume.pdf" className="resume item">Resume</a>
+                <a target="_blank" href="/Samiul-Hoque-Resume.pdf" className="resumeItem">Resume</a>
             </div>
         </div>
     )

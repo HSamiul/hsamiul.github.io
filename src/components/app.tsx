@@ -1,18 +1,23 @@
 import "../styles/app.scss"
 import About from "./about";
-import Hourly, { ProjectsDivider } from "./hourly";
 import NavigationBar from "./navigationBar";
-import PedPal from "./pedpal";
+import { ProjectsDivider, Hourly, PedPal } from "./projects";
 
 export function App(): JSX.Element {
     return (
         <div className="app">
-            <NavigationBar></NavigationBar>
-            
-            <About />
-            <ProjectsDivider />
-            <Hourly />
-            <PedPal />
+            <NavigationBar />
+
+            <div className="content">
+                <About />
+                <ProjectsDivider />
+
+                    <div className="projects">
+                        <Hourly />
+                        <PedPal />
+                    </div>
+                <div className="content"></div>
+            </div>
         </div>
     )
 }

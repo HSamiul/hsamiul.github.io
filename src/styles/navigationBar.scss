@@ -1,45 +1,70 @@
 @use 'variables' as v;
 
 .navigationBar {
+    width: 100%;
+
     display: flex;
     flex-direction: row;
+    align-items: center; // vertical
+    justify-content: space-between; // horizontal
 
     /* Sticky nav bar code: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
     position: sticky;
-    top: 0px;
-    padding-top: 20px; padding-bottom: 10px;
-    z-index: 1;
+    top: 0;
     background-color: v.$background;
-    
-    justify-content: space-between;
-    align-items: baseline;
+    margin-top: 1em; // extra spacing when at top of page
+    padding: 1em 0; // spacing during scroll
+    z-index: 1;
 
     .logo {
         color: v.$popText;
         font-family: 'Roboto Mono', monospace;
-        font-size: x-large;
+        font-size: 1.5em;
     }
     
     .item {
-        margin: 0px 20px;
         text-decoration: none;
+        margin: 0 0.5rem;
     }
     
-    .resume {
+    .resumeItem {
+        text-decoration: none;
+        margin-left: 0.5rem;
+
         color: v.$popText !important;
-        padding: 10px;
         border: 1px solid v.$popText;
         border-radius: 5px;
-    
+        padding: 0.5em;
     }
-    .resume:hover {
-        background-color: v.$lightPopText;
-    }
-    
+
     a.item {
         color: v.$regText;
     }
     a.item:hover {
         color: #ffffff;
+    }
+    
+    .resumeItem:hover {
+        background-color: v.$lightPopText;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .navigationBar {        
+        // applying margin to '.navigationBar' behaves weirdly :(
+        .logo {
+            margin-left: 1em;
+        }
+        .resumeItem {
+            margin-right: 1em;
+        }  
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigationBar {
+        .item {
+            display: none;
+        }
     }
 }

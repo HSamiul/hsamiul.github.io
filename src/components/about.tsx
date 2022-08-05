@@ -10,7 +10,7 @@ function About(): JSX.Element {
             <span className="bio">
                 I'm a junior attending Carnegie Mellon University.
                 I specialize in developing full stack applications like my iOS app, Hourly.
-                I just finished my summer 2022 internship at Erie Insurance, and am searching for my summer 2023 internship.
+                I just finished my summer 2022 internship at Erie Insurance, and I am searching for my summer 2023 internship.
             </span>
         </div>
     )

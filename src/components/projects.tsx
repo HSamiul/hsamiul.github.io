@@ -1,17 +1,16 @@
-import "../styles/hourly.scss"
-// import hourlyImage from "../../public/hourlyImage.png"
+import "../styles/projects.scss"
 
 export function ProjectsDivider(): JSX.Element {
     return (
         <div className="projectsDivider">
             <span className="blip">•</span>
-            <span className="text">Projects <span className="joke"> (I actually committed to)</span></span>
+            <span className="text">Projects <span className="joke"> (I actually finished)</span></span>
             <div className="divider"></div>
         </div>
     )
 }
 
-function Hourly(): JSX.Element {
+export function Hourly(): JSX.Element {
     return (
         <div className="project">
             <span className="title">Project Spotlight</span>
@@ -32,4 +31,22 @@ function Hourly(): JSX.Element {
     )
 }
 
-export default Hourly
+export function PedPal(): JSX.Element {
+    return (
+        <div className="project">
+            <span className="title">Project Spotlight</span>
+            <span className="name">PedPal</span>
+
+            <div className="description">
+                <span className="details">
+                    A standalone navigation app. 
+                    View your current location and watch it update in real time.
+                    Search for locations using natural language like "coffee shops" or "61A bus stop".
+                    Get a route to your destination along with a directions itinerary and ETA, all with the press of a button.
+                </span>
+
+                <img className="image" src="/hourlyImage.png" />
+            </div>
+        </div>
+    )
+}
