@@ -64,6 +64,8 @@
 
         .details {
             width: 30em;
+            min-width: 15em;
+
             height: 15em;
             overflow: scroll;
             
@@ -93,7 +95,6 @@
     }
 
     .project {
-
         .description {
             .details {
                 width: 25em;
@@ -109,15 +110,17 @@
 
 @media screen and (min-width: 1200px) {
     .projects {
-        margin: 5em 25em;
+        margin-top: 5em; margin-bottom: 5em;
+        margin-left: 10em; margin-right: 0em;
     }
 
     .project {
-        .description {
-            .details {
-                width: 25vw;
-                height: auto;
-            }
-        }
+        // background-color: red;
+        // .description {
+        //     .details {
+        //         width: 25vw !important;
+        //         height: auto;
+        //     }
+        // }
     }
 }
